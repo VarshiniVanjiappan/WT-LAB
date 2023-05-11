@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+<style>
+
+.bg-img{
+background-image: url("beach.jpeg");
+
+min-height: 600px;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+span.psw {
+            display: block;
+            float: none;
+margin-left:20%;
+        }
+.btn{
+background-color: teal;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btnn{
+background-color: teal;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class="bg-img">
+<center>
+
+
+<h1><br><br>Login Page<br><br></h1>
+
+ <form id="login-form" name="loginf" action="http://localhost:8071/login" method="get">
+ 
+<label for="username"><b>Username:</b></label>
+<input type="text"id="username" name="name" placeholder="Enter Username"><br><br>
+<label for="password">Password:</label>
+<input type="text"id="password"name="pass" placeholder="Enter Password">
+
+          
+
+<button type="submit" id="submit-btn" class="btn">Login</button>
+<button type="submit" class="btnn" ><a href="signup.html" style="text-decoration:none;">Sign Up</a></button>
+        </div>
+</form>
+</center>
+</div>
+
+
+</body>
+</html>

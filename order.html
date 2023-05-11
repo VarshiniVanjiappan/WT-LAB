@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        background-color: rgb(199, 219, 237);
+    }
+  </style>
+   
+   <script src="form.js"></script>
+</head>
+<body>
+    <div class="container">
+      <h2 class="text-center" style="font-size:2.5vw;"><b>CONTACT US</b></h2><BR>
+      <form action=" " name="myform" id="myform" method="post"onsubmit="return validateform()"  >
+        <div class="form-group">
+           <label for="name">FULL NAME :</label>
+           <input type="name" class="form-control" name="name" id="name" placeholder="ENTER NAME" name="text" required>
+        </div>  
+        <div class="form-group">
+          <label for="phone">PHONE NUMBER :</label>
+          <input type="number" class="form-control" name="phone" id="phone" placeholder="ENTER PHONE NUMBER" required>
+        </div> 
+        <div class="form-group">
+          <label for="email">EMAIL :</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="ENTER EMAIL ID" required>
+        </div>   
+       <div class="form-group">
+        <label for="address">PASSWORD :</label><br>
+        <input type="password" class="form-control" name="password" id="password" placeholder="ENTER PASSWORD" required>
+       </div>
+        <div class="form-group">
+          <label for="state">SELECT CITY :</label>
+          <select class="form-control" id="state" name="state">
+            <option>CHENNAI</option>
+            <option>COIMBATORE</option>
+            <option>SALEM</option>
+            <option>Bangalore</option>
+          </select>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">DESIGNS FOR :</label><br>
+          <input type="radio" class="form-check-input" name="feed" id="feed" >Kitchen <br>
+          <input type="radio" class="form-check-input" name="feed" id="feed" >Living<br>
+          <input type="radio" class="form-check-input" name="feed" id="feed" >Bedroom<br>
+          <input type="radio" class="form-check-input" name="feed" id="feed" >Kids room<br>
+        </div><br>
+        <div class="form-group">        
+          <input type="submit" class="btn btn-primary"  id="sub">
+          <input type="reset" class="btn btn-success" id="reset">
+      </div>
+    </form>
+    <p id="help" style="border:solid;height: 50pt;"></p>
+    </div>
+</body>
+</html>

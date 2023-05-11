@@ -1,0 +1,119 @@
+:root{
+    --color-primary:blue;
+    --color-white:white;
+    --color-black:black;
+    --color-black-1:rgb(63, 180, 234);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.menubar{
+    background-color:rgb(4, 14, 18);
+    height: 60px;
+    width: 1536px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo
+{
+    color: var(--color-white);
+    font-size: 30px;
+}
+.logo span{
+    color:rgb(246, 53, 53)
+}
+.menubar ul{
+    list-style: none;
+    display: flex;
+}
+.menubar ul li{
+    padding: 10px 30px;
+    position:relative;
+}
+.menubar ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menubar ul li a:hover
+{
+    color: blue;
+
+}
+.dropdown{
+    display: none;
+}
+.menubar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(4, 14, 18);
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+body{
+    height:calc(100vh -80px);
+    background-image: url(backgroundpic3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title h1{
+    color:white;
+    font-size: 70px;
+}
+.solid
+{
+    border-style: solid;
+    border-color: red;
+;
+}
+.double
+{
+    border-style: double;
+    border-color: azure;
+    
+
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6 ease;
+}
+.btn :hover{
+    background-color: white;
+    color: black;
+
+}

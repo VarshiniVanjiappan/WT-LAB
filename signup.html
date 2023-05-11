@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<style>
+ <!--html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}-->
+body{
+background-image: url("island.jpg");
+min-height: 600px;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.bg-img{
+background-image: url("marshall-island.jpg");
+min-height: 600px;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.submitBtn{
+ background-color: violet;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+</style>
+
+</head>
+<body>
+  <div class="bg-img">
+<center>
+<form name="sign" action="http://localhost:9000/signup" method ="post">
+<h1> SIGN UP</h1>
+ 
+<label>Email:&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
+<input type="text" name="pass" placeholder="Enter email"><br><br>
+
+<label>name:&#160&#160&#160&#160</label>
+<input type="text" name="name" placeholder="Enter usrname"><br><br>
+
+
+<label>Password:&#160&#160&#160&#160&#160</label>
+<input type="text" placeholder="Enter password"><br><br>
+
+
+<label>Confirm password:</label>
+<input type="text" placeholder="Enter password"><br><br>
+
+ <button type="submit" id="sub_btn" class="submitBtn"> Sign up&#160&#160&#160&#160</button>
+    </form>
+</center>
+</div>
+
+</body>
+</html>
